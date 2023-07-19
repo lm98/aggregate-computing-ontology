@@ -51,9 +51,41 @@
     
 
 
+    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#Anonym -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Anonym">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#Argument -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Argument"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#Branch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Branch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#Exchange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Exchange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#Foldhood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Foldhood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
+    </owl:Class>
     
 
 
@@ -63,9 +95,57 @@
     
 
 
+    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#Nbr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Nbr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#Program -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Program"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#Rep -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Rep">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#* -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#*">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#+ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#+">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#- -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#-">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#/ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#/">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
+    </owl:Class>
     
 
 
@@ -80,22 +160,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#Lambda -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Lambda">
-        <rdf:type rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#Nbr -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Nbr">
-        <rdf:type rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#Program-1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Program-1">
@@ -104,22 +168,32 @@
     
 
 
-    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#Rep -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Rep">
-        <rdf:type rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#+ -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#+">
-        <rdf:type rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
-    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Anonym"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Branch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Exchange"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Foldhood"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Nbr"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#Rep"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#*"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#+"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#-"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#/"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
