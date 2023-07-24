@@ -21,9 +21,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#has_argument -->
+    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#hasArgument -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#has_argument">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#hasArgument">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Argument"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
@@ -31,9 +31,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#has_root_function -->
+    <!-- http://www.semanticweb.org/leona/ontologies/ACO-main#hasRootFunction -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#has_root_function">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-main#hasRootFunction">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Program"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-main#Function"/>
     </owl:ObjectProperty>
