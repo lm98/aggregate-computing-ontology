@@ -30,6 +30,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasExport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasExport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Context"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Export"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasLanguageConstruct -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasLanguageConstruct">
