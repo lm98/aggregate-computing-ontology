@@ -25,6 +25,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasDeviceID">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Device"/>
     </owl:ObjectProperty>
     
 
@@ -46,10 +47,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasOutput -->
+    <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasResult -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasOutput">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasResult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Path"/>
     </owl:ObjectProperty>
     
 
@@ -58,6 +59,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasSensor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Sensor"/>
     </owl:ObjectProperty>
     
 
@@ -66,14 +69,24 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasSlot">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Path"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Slot"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasValue -->
+    <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#isRoot -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasValue">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#isRoot">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Path"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#mapsPathToResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#mapsPathToResult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Export"/>
     </owl:ObjectProperty>
     
 
@@ -82,6 +95,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#producesExport">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Device"/>
     </owl:ObjectProperty>
     
 
@@ -99,7 +113,9 @@
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Context -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Context"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Context">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Device"/>
+    </owl:Class>
     
 
 
@@ -129,19 +145,21 @@
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#LanguageConstruct -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#LanguageConstruct"/>
-    
-
-
-    <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Output -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Output"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#LanguageConstruct">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Slot"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Path -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Path"/>
+    
+
+
+    <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Result -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Result"/>
     
 
 
@@ -154,39 +172,6 @@
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Slot -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Slot"/>
-    
-
-
-    <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Value -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Value"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Context"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Device"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#DeviceId"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Export"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Field"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#LanguageConstruct"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Output"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Path"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Sensor"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Slot"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Value"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 
