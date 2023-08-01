@@ -64,7 +64,7 @@
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#LanguageConstruct -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#LanguageConstruct">
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-functionalLanguageConstruct">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-functional#Function"/>
     </owl:Class>
     
@@ -87,7 +87,7 @@
     <!-- http://www.semanticweb.org/leona/ontologies/ACO-functional#Branch -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-functional#Branch">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#LanguageConstruct"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-functional#LanguageConstruct"/>
     </owl:Class>
     
 
@@ -95,7 +95,7 @@
     <!-- http://www.semanticweb.org/leona/ontologies/ACO-functional#Exchange -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-functional#Exchange">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#LanguageConstruct"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-functional#LanguageConstruct"/>
     </owl:Class>
     
 
@@ -103,7 +103,7 @@
     <!-- http://www.semanticweb.org/leona/ontologies/ACO-functional#Foldhood -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-functional#Foldhood">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#LanguageConstruct"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-functional#LanguageConstruct"/>
     </owl:Class>
     
 
@@ -117,7 +117,7 @@
     <!-- http://www.semanticweb.org/leona/ontologies/ACO-functional#Nbr -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-functional#Nbr">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#LanguageConstruct"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-functional#LanguageConstruct"/>
     </owl:Class>
     
 
@@ -131,7 +131,7 @@
     <!-- http://www.semanticweb.org/leona/ontologies/ACO-functional#Rep -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-functional#Rep">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#LanguageConstruct"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-functional#LanguageConstruct"/>
     </owl:Class>
     
 

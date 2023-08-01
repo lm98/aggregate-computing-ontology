@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#"
-     xml:base="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11"
+<rdf:RDF xmlns="http://www.semanticweb.org/leona/ontologies/ACO-context#"
+     xml:base="http://www.semanticweb.org/leona/ontologies/ACO-context#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#">
         <owl:imports rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-functional"/>
     </owl:Ontology>
     
@@ -25,67 +25,67 @@
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasDeviceID -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasDeviceID">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#hasDeviceID">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Device"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#DeviceId"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#DeviceId"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasExport -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasExport">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Context"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Export"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#hasExport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Context"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Export"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasNeighbor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasNeighbor">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Device"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Device"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#hasNeighbor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Device"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasPath -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasPath">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Export"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Path"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#hasPath">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Export"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Path"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasResult -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasResult">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Path"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Result"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#hasResult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Path"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Result"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasSensor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasSensor">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#hasSensor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Device"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Sensor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Sensor"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasSlot -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#hasSlot">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#hasSlot">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Path"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Slot"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Path"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Slot"/>
     </owl:ObjectProperty>
     
 
@@ -103,45 +103,45 @@
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Context -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Context">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Device"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#Context">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Device"/>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Device -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Device"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#Device"/>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#DeviceId -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#DeviceId"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#DeviceId"/>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Export -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Export"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#Export"/>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#LanguageConstruct -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#LanguageConstruct"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#LanguageConstruct"/>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Path -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Path"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#Path"/>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Result -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Result">
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#Result">
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-functional#Value"/>
     </owl:Class>
     
@@ -149,13 +149,13 @@
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Sensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Sensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#Sensor"/>
     
 
 
     <!-- http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Slot -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/filippo/ontologies/2023/6/untitled-ontology-11#Slot"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-context#Slot"/>
 </rdf:RDF>
 
 
