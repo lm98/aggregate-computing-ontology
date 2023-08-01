@@ -1,6 +1,10 @@
 thesis-main.pdf
 *~
 
+## Protege generated files
+*.properties
+catalog*.xml
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
