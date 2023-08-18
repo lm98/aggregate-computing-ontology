@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#"
+     xml:base="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution">
+        <owl:imports rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#hasAggregateProgram -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#hasAggregateProgram">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#ExecutionModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#AggregateProgram"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#hasContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#hasContext">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#ExecutionModel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#RoundVM"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Context"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#hasRoundVM -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#hasRoundVM">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#Round"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#RoundVM"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#producesExport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#producesExport">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#ExecutionModel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#RoundVM"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-context#Export"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#AggregateProgram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#AggregateProgram">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/leona/ontologies/ACO-functional#Program"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#ExecutionModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#ExecutionModel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#Reactive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#Reactive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#ExecutionModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#Round -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#Round">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#ExecutionModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#RoundVM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#RoundVM"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leona/ontologies/ACO-functional#Program -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/ACO-functional#Program"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#AggregateProgram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#ExecutionModel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#Round"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leona/ontologies/2023/7/ACO-execution#RoundVM"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
